@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <script src="CDN-TailwindCSS.js"></script>
+    <script src="tip.js" defer></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+
+<body class="p-[20px] flex justify-center items-center">
+    <div class="w-[100%] h-[50vh] border-2 border-black bg-blue-300 rounded-2xl">
+        <h2 class="text-center text-3xl font-[600] text-black"> ================== Tip Converter ===============</h2>
+        <div class="flex flex-col justify-center items-center gap-[20px] mt-[20px] p-[20px]">
+            <input type="number" class="border-2 border-black h-[50px] w-[100%] text-2xl p-[10px] rounded-2xl" id="in1"
+                placeholder="Price...">
+            <input type="number" class="border-2 border-black h-[50px] w-[100%] text-2xl p-[10px] rounded-2xl" id="in2"
+                placeholder="Tip...">
+            <button
+                class="border-[3px] border-violet-600 w-[300px] h-[50px] text-2xl font-[600] rounded-[10px] bg-green-500 text-white"
+                id="convert">Convert</button>
+        </div>
+        <h1 class="text-center text-3xl font-[600] text-orange-600 mt-[20px]" id="result">Result</h1>
+    </div>
+</body>
+
+</html>
